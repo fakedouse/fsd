@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/logo/logo.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;;AAGJ;EACI;EACA;EACA;EACA","file":"logo.3c78b628.css","sourceRoot":"../src","sourcesContent":[".logo {\n    display: inline-block;\n    vertical-align: middle;\n}\n\n.logo-img {\n    width: 40px;\n    height: 40px;\n    left: 140px;\n    top: 155px;\n}"]}
