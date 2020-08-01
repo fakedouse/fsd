@@ -1,0 +1,24 @@
+{
+  "name": "fsd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.pug",
+    "build": "parcel build src/index.pug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fakedouse/fsd.git"
+  },
+  "author": "Vitaliy Voronov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fakedouse/fsd/issues"
+  },
+  "homepage": "https://github.com/fakedouse/fsd#readme",
+  "devDependencies": {
+    "pug": "^3.0.0"
+  }
+}
