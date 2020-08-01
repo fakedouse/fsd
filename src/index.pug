@@ -4,30 +4,13 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title FSD
+        link(rel="shortcut icon", href="../static/favicon.ico", type="image/x-icon")
+        link(rel="stylesheet", href="style.scss")
     body
         header
-            nav.header-nav
-                ul
-                    li
-                        a(href="") Home
-                    li
-                        a(href="") News
-                    li
-                        a(href="") States
-                    li
-                        a(href="") Books
-                    li
-                        a(href="") Authorization
+            include components/headers/header.pug
         main
-            .sidebar
-                ul
-                    li
-                        a(href="http://")
-                    li
-                        a(href="http://")
-                    li
-                        a(href="http://")
-            .content
-                .post
-                    h3.postheader Hello World
-                    p.postcontent Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sit, est vel aperiam minus vero quasi inventore sunt voluptate odio!
+
+        footer
+
+        script(src="main.js")
