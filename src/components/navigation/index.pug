@@ -1,0 +1,27 @@
+- var navLinks = [
+-    {href:'/about', name: 'О нас'},
+-    {href:'/services', name: 'Услуги', childs: [
+-        {href:'/reserve', name:'Забронировать'},
+-        {href:'/selection', name:'Подобрать'}
+-    ]},
+-    {href:'/vacancies', name: 'Вакансии'},
+-    {href:'/news', name: 'Новости'},
+-    {href:'/contracts', name: 'Соглашения', childs: [
+-        {href:'/contracts/1', name: 'Соглашение #1'},
+-        {href:'/contracts/2', name: 'Соглашение #2'},
+-        {href:'/contracts/756', name: 'Соглашение #756'}
+-    ]},
+-]
+
+nav.nav
+    ul.nav__links
+        for link in navLinks
+            li.nav__link
+                a(href=link.href, class=link.childs?"dropdown":"") !{link.name}
+                - if(link.childs)
+                    ul.dropdown__list
+                        for chlink in link.childs
+                            li.dropdown__link
+                                a(href=chlink.href, class="dropdown__anchor") !{chlink.name}
+
+script(src="/components/navigation/nav.js")

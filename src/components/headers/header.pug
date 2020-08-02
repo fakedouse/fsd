@@ -1,5 +1,10 @@
-.container
-    .logo
-        include ../logo/logo.pug
-    .navigation
-    .autorization
+.header
+    .logo-container
+        include ../logo/index.pug
+    .main-container
+        .nav-container
+            include ../navigation/index.pug
+        .auth-container
+            include ../form_elements/authorization/index.pug
+
+script(src="/components/headers/header.js")

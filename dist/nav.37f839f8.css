@@ -1,0 +1,18 @@
+nav.nav ul {
+  list-style: none;
+}
+nav.nav ul .nav__link {
+  display: inline-block;
+}
+nav.nav ul.dropdown__list {
+  display: none;
+}
+nav.nav a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+/*# sourceMappingURL=/nav.37f839f8.css.map */

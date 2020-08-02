@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  max-width: 1440px;
+  padding: 15px 140px;
+}
+.header div {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=/header.082a6e3c.css.map */

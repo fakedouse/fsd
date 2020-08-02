@@ -1,11 +1,15 @@
 .logo {
     display: inline-block;
     vertical-align: middle;
-}
-
-.logo-img {
-    width: 40px;
     height: 40px;
-    left: 140px;
-    top: 155px;
+    .logo__img {
+        width: 40px;
+        height: 40px;
+    }
+    .logo__text {
+        margin-left: 12.5px;
+        padding-top: 5px;
+        line-height: 40px;
+
+    }
 }
