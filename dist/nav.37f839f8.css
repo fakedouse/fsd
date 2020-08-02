@@ -3,6 +3,22 @@ nav.nav ul {
 }
 nav.nav ul .nav__link {
   display: inline-block;
+  padding: 0 10px;
+}
+nav.nav ul .nav__link.dropdown::after {
+  display: inline-block;
+  margin-bottom: 2px;
+  margin-left: 8px;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-bottom: 2px solid rgba(31, 32, 65, 0.5);
+  border-right: 2px solid rgba(31, 32, 65, 0.5);
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+nav.nav ul .nav__link:hover::after {
+  border-color: rgba(31, 32, 65, 0.75);
 }
 nav.nav ul.dropdown__list {
   display: none;
@@ -13,6 +29,10 @@ nav.nav a {
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
+}
+nav.nav a.active {
+  font-weight: bold;
+  color: rgba(31, 32, 65, 0.75);
 }
 
 /*# sourceMappingURL=/nav.37f839f8.css.map */

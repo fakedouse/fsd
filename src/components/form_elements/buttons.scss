@@ -1,0 +1,28 @@
+button {
+    padding: 10px 20px;
+    border: 2px solid #BC9CFF;
+    border-radius: 22px;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 10px;
+    &.stroke {
+        color: #BC9CFF;
+        background: #fff;
+    }
+    &.solid {
+        background: #BC9CFF;
+        color: white;
+    }
+    &.light {
+        border: none;
+        text-transform: none;
+        font-size: 14px;
+        font-weight: normal;
+        background: none;
+        color: rgba(31, 32, 65, 0.5);
+    }
+}

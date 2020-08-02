@@ -1,3 +1,11 @@
+- var signin = false
+- var user = {name:'Юлий Цезарь'}
+
 .auth
-    button.stroke Войти
-    button.solid Зарегистрироваться
+    - if (signin)
+        button.light.user !{user.name}
+    - else
+        button.stroke Войти
+        button.solid Зарегистрироваться
+script(src='./components/form_elements/styles.js')
+script(src='./components/form_elements/authorization/auth.js')

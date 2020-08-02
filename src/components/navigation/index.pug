@@ -1,5 +1,5 @@
 - var navLinks = [
--    {href:'/about', name: 'О нас'},
+-    {href:'/about', name: 'О нас', active: true},
 -    {href:'/services', name: 'Услуги', childs: [
 -        {href:'/reserve', name:'Забронировать'},
 -        {href:'/selection', name:'Подобрать'}
@@ -14,10 +14,10 @@
 -]
 
 nav.nav
-    ul.nav__links
+    ul.nav__list
         for link in navLinks
-            li.nav__link
-                a(href=link.href, class=link.childs?"dropdown":"") !{link.name}
+            li.nav__link(class=link.childs?"dropdown":"")
+                a(href=link.href class=link.active?"active":"") !{link.name}
                 - if(link.childs)
                     ul.dropdown__list
                         for chlink in link.childs

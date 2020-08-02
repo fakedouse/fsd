@@ -3,6 +3,23 @@ nav.nav {
         list-style: none;
         .nav__link  {
             display: inline-block;
+            padding: 0 10px;
+            &.dropdown::after {
+                display: inline-block;
+                margin-bottom: 2px;
+                margin-left: 8px;
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-bottom: 2px solid rgba(31, 32, 65, 0.5);
+                border-right: 2px solid rgba(31, 32, 65, 0.5);
+                transform: rotate(45deg);
+                cursor: pointer;
+            }
+            &:hover::after {
+                border-color: rgba(31, 32, 65, 0.75);
+            }
+
         }
         &.dropdown__list {
             display: none;
@@ -14,5 +31,10 @@ nav.nav {
         font-size: 14px;
         line-height: 17px;
         color: rgba(31, 32, 65, 0.5);
+        &.active {
+            font-weight: bold;
+            color: rgba(31, 32, 65, 0.75);
+        }
     }
+
 }
